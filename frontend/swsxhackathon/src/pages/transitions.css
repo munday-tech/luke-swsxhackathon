@@ -1,0 +1,84 @@
+/* transitions.css */
+
+/* Slide-in from the right */
+.slide-enter {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .slide-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
+  
+  /* Slide-out to the left */
+  .slide-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .slide-exit-active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
+  
+  /* Canvas Slide-in */
+  .canvas-enter {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  .canvas-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  }
+  
+  .canvas-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .canvas-exit-active {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  }
+  
+  /* Fade-in for Generated Statements */
+  .generated-statement-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  .generated-statement-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+  
+  /* Slide-in for Validated Statements */
+  .validated-statement-enter {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  .validated-statement-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+  
+  /* Add to transitions.css */
+.fade-slide-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.fade-slide-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+}
+.fade-slide-exit {
+    opacity: 1;
+}
+.fade-slide-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+}

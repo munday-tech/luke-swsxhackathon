@@ -1,0 +1,15 @@
+/* src/components/MarkdownDisplay.css */
+
+/* src/components/MarkdownDisplay.css */
+.highlight {
+    background-color: #ffe6e6; /* Light red background */
+    color: #cc0000; /* Dark red text */
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+
+/* Optional: Add transition for smoother highlighting */
+.highlight {
+    transition: background-color 0.3s, color 0.3s;
+}

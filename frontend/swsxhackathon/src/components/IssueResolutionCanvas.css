@@ -1,0 +1,89 @@
+/* IssueResolutionCanvas.css */
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: flex;
+    padding: 20px;
+  }
+  
+  .canvas-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .editor-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-right: 1px solid #e5e7eb;
+    position: relative;
+  }
+  
+  .ace-editor {
+    flex: 1;
+  }
+  
+  .issues-section {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  
+  .issues-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .issue-item {
+    background-color: #f9fafb;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .issue-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .accept-button,
+  .deny-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .accept-button {
+    background-color: #10b981;
+    color: white;
+  }
+  
+  .deny-button {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

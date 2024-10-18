@@ -1,0 +1,32 @@
+/* CSS for squiggly underline */
+.squiggly {
+    text-decoration: underline wavy red;
+    text-underline-position: under;
+  }
+  
+  /* Tooltip styling */
+  .tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 200px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  
